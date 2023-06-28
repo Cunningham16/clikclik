@@ -1,0 +1,62 @@
+.container {
+    position: relative;
+    color: white;
+    img {
+      width: 30px;
+      height: 20px;
+    }
+  }
+  
+  .major_section {
+    display: flex;
+    cursor: pointer;
+    width: 74px;
+    padding: 2px;
+    box-sizing: border-box;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-end;
+    border: none;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s all ease;
+  }
+  
+  .major_section:hover {
+    background-color: #3a3a3c;
+  }
+  
+  .hiddenContent {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #1c1c1e;
+    z-index: 100;
+    top: 100;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hiddenContent_section {
+    width: 100%;
+    background-color: #1c1c1e;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .section_active {
+    background-color: #0a84ff;
+  }
+  
+  .check {
+    color: white;
+  }
+  

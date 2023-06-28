@@ -1,0 +1,169 @@
+$button_height: 50px;
+$button_bg_default: transparent;
+$button_border_radius: 5px;
+$button_border_default: 1.5px solid gray;
+$color_selected: #0a84ffd5;
+$color_errorPressed: #ff453a;
+
+.button_container {
+  position: relative;
+}
+
+%button_template {
+  border: $button_border_default;
+  border-radius: $button_border_radius;
+  padding: 5px;
+  margin: 3px 2px;
+  height: $button_height;
+  font-family: "SFMonoRegular";
+
+  section {
+    display: flex;
+  }
+  p {
+    z-index: 2;
+  }
+}
+
+.error_default {
+  width: calc(100% - 4px);
+  height: calc(100% - 6px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: $button_border_radius;
+}
+
+.error_active {
+  width: calc(100% - 4px);
+  height: calc(100% - 6px);
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  z-index: 0;
+  border-radius: $button_border_radius;
+  animation: showHideError 5s linear 1;
+}
+
+.tab {
+  width: 60px;
+}
+
+.backspace {
+  text-align: center;
+  justify-content: center;
+  font-size: 10px;
+  width: 60px;
+}
+
+.caps {
+  width: 70px;
+}
+
+.enter {
+  text-align: center;
+  justify-content: center;
+  width: 92px;
+}
+
+.shift {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  width: 108px;
+}
+
+.space {
+  height: 50px;
+  width: 300px;
+  position: relative;
+  margin: 1px 1px 1px 1px;
+}
+
+.sys_left {
+  justify-content: left;
+}
+
+.sys_right {
+  justify-content: right;
+}
+
+sup {
+  font-size: 12px;
+  position: relative;
+  bottom: 3px;
+  left: 3px;
+  z-index: 2;
+}
+
+.default {
+  width: 50px;
+  height: $button_height;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif !important;
+  font-size: 15px;
+  line-height: 100%;
+
+  background-color: $button_bg_default;
+  color: white;
+  @extend %button_template;
+}
+
+.active_default {
+  animation: showHideActive 0.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes showHideActive {
+  0% {
+    background-color: $color_selected;
+  }
+  50% {
+    background-color: $button_bg_default;
+  }
+  100% {
+    background-color: $color_selected;
+  }
+}
+
+@keyframes showHideError {
+  from {
+    background-color: $color_errorPressed;
+  }
+  to {
+    background-color: $button_bg_default;
+  }
+}
+
+.sys_default {
+  border: $button_border_default;
+  border-radius: $button_border_radius;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 11px;
+  background-color: $button_bg_default;
+  line-height: 100%;
+  padding: 5px;
+  @extend %button_template;
+}
+
+.error_1prior {
+  background-color: #b30000 !important;
+}
+
+.error_2prior {
+  background-color: #7d0000 !important;
+}
+
+.error_3prior {
+  background-color: #ff8080 !important;
+}

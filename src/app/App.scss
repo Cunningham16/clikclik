@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "SFProRegular";
+    src: local(SFProRegular), url(../shared/assets/fonts/SF-Pro-Text/SF-Pro-Text-Regular.otf) format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SFMonoRegular";
+    src: local("SFMonoRegular"), url(../shared/assets/fonts/SF-Mono/SFMono-Regular.otf) format("opentype");
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #332b29;
+}

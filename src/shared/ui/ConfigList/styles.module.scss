@@ -1,0 +1,17 @@
+.settings_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .settings_header {
+    padding: 5px 15px;
+    h3 {
+      font-family: "SFProRegular";
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.12px;
+      font-weight: 400;
+      color: #ebebf599;
+    }
+  }
