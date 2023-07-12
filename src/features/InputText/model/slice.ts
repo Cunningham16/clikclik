@@ -3,7 +3,7 @@ import { configureStroke } from "../lib/configureStroke";
 import { generateText } from "../lib/generateText";
 import { ConfigText } from "@/features/ConfigureText/model";
 import { TextInputConfig } from "./types";
-import { WordsResponce } from "shared/api/RTKService";
+import { IWordsResponce } from "shared/types/ResponceTypes";
 
 interface IInputTextClikClikProps {
   inputText: TextInputConfig[];
@@ -116,14 +116,14 @@ const InputTextSlice = createSlice({
       };
       state.isEndLine = true;
     },
-    queryWords(state, action: PayloadAction<WordsResponce[]>) {
+    queryWords(state, action: PayloadAction<IWordsResponce>) {
       if (action.payload === undefined) {
         state.arrayWords = [];
         state.arraySentences = [];
         state.inputText = [];
       } else {
-        state.arrayWords = action.payload[0].words;
-        state.arraySentences = action.payload[0].sentences;
+        state.arrayWords = action.payload.words;
+        state.arraySentences = action.payload.sentences;
       }
     },
     updateSpeed(state, action: PayloadAction<number>) {

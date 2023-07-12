@@ -1,4 +1,4 @@
 export enum TrainingLanguages {
-    RU = "Ru",
-    EN = "En"
+    RU = "RU",
+    EN = "EN"
 }

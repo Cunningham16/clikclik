@@ -1,0 +1,918 @@
+{
+    "id": 0,
+    "language": "Ru",
+    "keyCases": {
+      "downCase": [
+        " ",
+        "а",
+        "б",
+        "в",
+        "г",
+        "д",
+        "е",
+        "ё",
+        "ж",
+        "з",
+        "и",
+        "й",
+        "к",
+        "л",
+        "м",
+        "н",
+        "о",
+        "п",
+        "р",
+        "с",
+        "т",
+        "у",
+        "ф",
+        "х",
+        "ц",
+        "ч",
+        "ш",
+        "щ",
+        "ь",
+        "ы",
+        "ъ",
+        "э",
+        "ю",
+        "я",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "Enter"
+      ],
+      "upperCase": [
+        "А",
+        "Б",
+        "В",
+        "Г",
+        "Д",
+        "Е",
+        "Ё",
+        "Ж",
+        "З",
+        "И",
+        "Й",
+        "К",
+        "Л",
+        "М",
+        "Н",
+        "О",
+        "П",
+        "Р",
+        "С",
+        "Т",
+        "У",
+        "Ф",
+        "Х",
+        "Ц",
+        "Ч",
+        "Ш",
+        "Щ",
+        "Ь",
+        "Ы",
+        "Ъ",
+        "Э",
+        "Ю",
+        "Я"
+      ],
+      "symbols": ["!", "%", "?", "-", "+", "=", ".", ",", ";", ":", "(", ")", "_", "*"]
+    },
+    "keyList": [
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Ё",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "5",
+        "content1": "1",
+        "content2": "!",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "right",
+        "selected": false,
+        "highlighted": true,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "4",
+        "content1": "2",
+        "content2": "\"",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "right",
+        "selected": false,
+        "highlighted": false,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "3",
+        "content1": "3",
+        "content2": "№",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "right",
+        "selected": false,
+        "highlighted": false,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "1.1",
+        "content1": "4",
+        "content2": ";",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "right",
+        "selected": false,
+        "highlighted": true,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "1.1",
+        "content1": "5",
+        "content2": "%",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "right",
+        "selected": false,
+        "highlighted": false,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "1",
+        "content1": "6",
+        "content2": ":",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": false,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "1",
+        "content1": "7",
+        "content2": "?",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": true,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "3",
+        "content1": "8",
+        "content2": "*",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": true,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "4",
+        "content1": "9",
+        "content2": "(",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": false,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "number",
+          "content2": "symbol"
+        },
+        "type": "5",
+        "content1": "0",
+        "content2": ")",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": true,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "symbol",
+          "content2": "symbol"
+        },
+        "type": "5",
+        "content1": "-",
+        "content2": "_",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": true,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "symbol",
+          "content2": "symbol"
+        },
+        "type": "5",
+        "content1": "=",
+        "content2": "+",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": false,
+        "active": false
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "delete",
+        "content1": "delete",
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "tab",
+        "content1": "tab",
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Й",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "4",
+        "content1": "Ц",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "3",
+        "content1": "У",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1.1",
+        "content1": "К",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1.1",
+        "content1": "Е",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1",
+        "content1": "Н",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1",
+        "content1": "Г",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "3",
+        "content1": "Ш",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "4",
+        "content1": "Щ",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "З",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Х",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Ъ",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "symbol",
+          "content2": "symbol"
+        },
+        "type": "5",
+        "content1": "\\",
+        "content2": "/",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "needShift": "left",
+        "selected": false,
+        "highlighted": false,
+        "active": false
+      },
+
+      {
+        "specific": {
+          "content1": "system",
+          "content2": "system"
+        },
+        "type": "caps",
+        "content1": "caps lock",
+        "content2": "●",
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Ф",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "4",
+        "content1": "Ы",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "3",
+        "content1": "В",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1.1",
+        "content1": "А",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1.1",
+        "content1": "П",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1",
+        "content1": "Р",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1",
+        "content1": "О",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "3",
+        "content1": "Л",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "4",
+        "content1": "Д",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Ж",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Э",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system",
+          "content2": "system"
+        },
+        "type": "enter",
+        "content1": "enter",
+        "content2": "return",
+        "errorPressed": false,
+        "errorPriority": 0,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "shift-left",
+        "content1": "shift",
+        "positionFor": "left",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "5",
+        "content1": "Я",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "4",
+        "content1": "Ч",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "3",
+        "content1": "С",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1.1",
+        "content1": "М",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1.1",
+        "content1": "И",
+        "needShift": "right",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1",
+        "content1": "Т",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "1",
+        "content1": "Ь",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      { 
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "3",
+        "content1": "Б",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "letter"
+        },
+        "type": "4",
+        "content1": "Ю",
+        "needShift": "left",
+        "errorPriority": 0,
+        "errorPressed": false,
+        "selected": false,
+        "highlighted": true,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "symbol",
+          "content2": "symbol"
+        },
+        "type": "5",
+        "content1": ".",
+        "content2": ",",
+        "needShift": "left",
+        "errorPressed": false,
+        "errorPriority": 0,
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "errorPressed": false,
+        "errorPriority": 0,
+        "type": "shift-right",
+        "content1": "shift",
+        "positionFor": "right",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "fn",
+        "content1": "fn",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "control",
+        "content1": "control",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "option",
+        "content1": "option",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "command",
+        "content1": "command",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "space",
+        "errorPressed": false,
+        "errorPriority": 0,
+        "content1": " ",
+        "selected": false
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "command",
+        "content1": "command",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "option",
+        "content1": "option",
+        "selected": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "arrow-left",
+        "content1": "⯇",
+        "selected": false,
+        "highlighted": false,
+        "errorPressed": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "arrow-top",
+        "content1": "⯅",
+        "selected": false,
+        "highlighted": false,
+        "errorPressed": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "arrow-bottom",
+        "content1": "⯆",
+        "selected": false,
+        "errorPressed": false,
+        "highlighted": false,
+        "active": true
+      },
+      {
+        "specific": {
+          "content1": "system"
+        },
+        "type": "arrow-right",
+        "content1": "⯈",
+        "selected": false,
+        "errorPressed": false,
+        "highlighted": false,
+        "active": true
+      }
+    ]
+  }

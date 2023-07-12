@@ -74,14 +74,27 @@ export const InputText: FC = () => {
       dispatch(updateSpeed(letterCounter));
       dispatch(clearLetterCounter());
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [intervalCounter]);
 
-  useEffect(() => {
-    const lastLetter: TextInputConfig = inputText?.find(
-      (elem) => elem.isSelected === true
-    );
+  const lastLetter: TextInputConfig = inputText?.find(
+    (elem) => elem.isSelected === true
+  );
 
+  const errorHandler = (inputLetter: string) => {
+    if (
+      inputLetter !== "ShiftLeft" &&
+      inputLetter !== "ShiftRight" &&
+      inputLetter !== "" &&
+      inputLetter !== null &&
+      inputLetter !== "Backspace"
+    ) {
+      dispatch(addTypos());
+      dispatch(initTypo());
+      dispatch(setLetterTypo(inputLetter));
+    }
+  };
+
+  useEffect(() => {
     if (
       inputLetter === "Backspace" &&
       isEndLine === false &&
@@ -147,34 +160,7 @@ export const InputText: FC = () => {
       dispatch(clearAccuracy());
       dispatch(clearSpeed());
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputLetter, counterInput]);
-
-  const errorHandler = (inputLetter: string) => {
-    if (
-      inputLetter !== "ShiftLeft" &&
-      inputLetter !== "ShiftRight" &&
-      inputLetter !== "" &&
-      inputLetter !== null &&
-      inputLetter !== "Backspace"
-    ) {
-      dispatch(addTypos());
-      dispatch(initTypo());
-      dispatch(setLetterTypo(inputLetter));
-    }
-  };
-
-  useEffect(() => {
-    dispatch(
-      updateTextInput({
-        config: configurationText,
-        symbols: keysCases.symbols,
-      })
-    );
-    dispatch(clearAccuracy());
-    dispatch(clearSpeed());
-  }, [configurationText]);
 
   return (
     <div className={styles.container}>

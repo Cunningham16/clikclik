@@ -1,4 +1,4 @@
-$main-color: #000000;
+$main-color: #454651;
 
 .settings_section {
     background-color: $main-color;
@@ -24,18 +24,18 @@ $main-color: #000000;
     position: absolute;
     bottom: 1px;
     margin: auto;
-    height: 0.5px;
+    height: 1px;
     width: calc(100% - 30px);
-    background-color: #38383a;
+    background-color: #4D4F55;
   }
   
   .settings_section:last-child {
-    border-bottom: 0.5px solid #38383a;
+    border-bottom: 1px solid #4D4F55;
     &::before {
       display: none;
     }
   }
   
   .settings_section:nth-child(2) {
-    border-top: 0.5px solid #38383a;
+    border-top: 1px solid #4D4F55;
   }

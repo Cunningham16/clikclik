@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { ButtonKey } from "@/entities/ButtonKey/ui";
 import { useCallback, useEffect, memo } from "react";
-import { useAppDispatch, useAppSelector } from "shared/model/hooks";
+import { useAppDispatch, useAppSelector } from "@/shared/model/hooks";
 import { TextInputConfig } from "@/features/InputText/model";
 import { useSound } from "use-sound";
 import {
@@ -11,7 +11,7 @@ import {
   setPriorityTypoKeys,
   showErrorKey,
   showSelectedKey,
-} from "shared/model/keyboardSlice";
+} from "@/shared/model/keyboardSlice";
 import styles from "./styles.module.scss";
 import audio_alert from "shared/assets/audio/tindeck_1.mp3";
 
@@ -23,6 +23,7 @@ export const Keyboard = memo(() => {
     (state) => state.InputTextReducer
   );
   const { configurationKeyboard } = useAppSelector((state) => state.configKeyboardReducer);
+  const {configurationText} = useAppSelector((state) => state.configTextReducer)
   const [isVisibleHints, setIsVisible] = useState(true);
   const [playAlert] = useSound(audio_alert);
 
@@ -78,11 +79,27 @@ export const Keyboard = memo(() => {
     }
   }, [isEndLine]);
 
+  let array = []
+
   return (
     <div className={styles.keyboard}>
-      {keyList?.map((elem) => (
-        <ButtonKey config={elem} />
-      ))}
+      {keyList?.map((elem) => {
+        if(elem.type === "arrow-top" || elem.type === "arrow-bottom"){
+          array = [...array, elem]
+          if(array.length === 2){
+            return (
+              <div className={styles.arrows_container}>
+                <ButtonKey configKey={array[0]} configText={configurationText}/>
+                <ButtonKey configKey={array[1]} configText={configurationText}/>
+              </div>
+            )
+          }
+        }else{
+          return (
+            <ButtonKey configKey={elem} configText={configurationText}/>
+          )
+        }
+      })}
     </div>
   );
 });

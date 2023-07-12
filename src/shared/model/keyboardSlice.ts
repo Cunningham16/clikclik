@@ -9,7 +9,7 @@ import { setErrorKey } from "shared/lib/setErrorKey";
 import { setSelectedKey } from "shared/lib/setSelectedKey";
 import { setPriorErrorKeys } from "shared/lib/setPriorErrorKeys";
 import { clearErrorKey } from "shared/lib/clearErrorKey";
-import { IKeyboardResponce } from "shared/API/RTKService";
+import { IKeyboardResponce } from "shared/types/ResponceTypes";
 
 interface KeyboardState {
   keysCases: KeyboardCases | undefined;
@@ -72,15 +72,15 @@ export const keyboardSlice = createSlice({
         return elem;
       });
     },
-    queryKeyboard(state, data: PayloadAction<IKeyboardResponce[] | undefined>) {
+    queryKeyboard(state, data: PayloadAction<IKeyboardResponce | undefined>) {
       if (data.payload === undefined) {
         state.keyList = undefined;
         state.keysCases = undefined;
       } else {
-        state.keyList = data.payload[0].keyList;
-        state.keysCases = data.payload[0].keyCases;
+        state.keyList = data.payload.keyList;
+        state.keysCases = data.payload.keyCases;
       }
-    },
+    }
   },
 });
 

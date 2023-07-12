@@ -11,6 +11,7 @@ import styles from "./styles.module.scss";
 
 import { average } from "../lib/average";
 
+
 export const Header: FC = () => {
   const { typos, speedArray, accuracy } = useAppSelector((state) => state.InputTextReducer);
 

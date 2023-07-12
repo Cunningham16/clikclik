@@ -12,7 +12,7 @@ $checkbox-second-color: #78788052;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 
 .checkbox {
@@ -51,7 +51,7 @@ $checkbox-second-color: #78788052;
   height: 27px;
   border-radius: 20px;
   background-color: white;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
   border: 0.5px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;

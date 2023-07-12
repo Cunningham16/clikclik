@@ -3,13 +3,13 @@
   }
   .sidebar-enter-active {
     transform: translate3d(0, 0, 0);
-    transition: transform 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: transform 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
   }
   .sidebar-exit {
     transform: translate3d(0, 0, 0);
   }
   .sidebar-exit-active {
     transform: translate3d(100%, 0, 0);
-    transition: transform 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: transform 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
   }
   

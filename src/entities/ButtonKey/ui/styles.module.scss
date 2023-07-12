@@ -1,9 +1,10 @@
 $button_height: 50px;
 $button_bg_default: transparent;
-$button_border_radius: 5px;
-$button_border_default: 1.5px solid gray;
-$color_selected: #0a84ffd5;
-$color_errorPressed: #ff453a;
+$button_bg_highlighted: #3C3A48;
+$button_border_radius: 7px;
+$button_border_default: 2px solid #44444E;
+$color_selected: #539CE5;
+$color_errorPressed: #F64764;
 
 .button_container {
   position: relative;
@@ -12,10 +13,12 @@ $color_errorPressed: #ff453a;
 %button_template {
   border: $button_border_default;
   border-radius: $button_border_radius;
-  padding: 5px;
-  margin: 3px 2px;
+  padding: 6px;
+  box-sizing: border-box;
   height: $button_height;
   font-family: "SFMonoRegular";
+  display: flex;
+  box-sizing: border-box;
 
   section {
     display: flex;
@@ -26,8 +29,8 @@ $color_errorPressed: #ff453a;
 }
 
 .error_default {
-  width: calc(100% - 4px);
-  height: calc(100% - 6px);
+  width: 100%;
+  height: 50px;
   position: absolute;
   top: 0;
   left: 0;
@@ -35,86 +38,139 @@ $color_errorPressed: #ff453a;
 }
 
 .error_active {
-  width: calc(100% - 4px);
-  height: calc(100% - 6px);
+  width: 100%;
+  height: 50px;
   position: absolute;
-  top: 3px;
-  left: 2px;
+  top: 0px;
+  left: 0px;
   z-index: 0;
   border-radius: $button_border_radius;
-  animation: showHideError 5s linear 1;
+  animation: showHideError 3s linear 1;
 }
 
 .tab {
-  width: 60px;
+  width: 80px;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
-.backspace {
-  text-align: center;
-  justify-content: center;
-  font-size: 10px;
-  width: 60px;
+.delete {
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 12px;
+  width: 80px;
 }
 
 .caps {
-  width: 70px;
+  width: 96px;
+  text-align: right;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  position: relative;
+  sup{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+  }
 }
 
 .enter {
-  text-align: center;
-  justify-content: center;
-  width: 92px;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 94px;
+  position: relative;
+  sup{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+  }
 }
 
 .shift {
-  width: 100%;
   text-align: center;
-  justify-content: center;
-  width: 108px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 126px;
 }
 
 .space {
   height: 50px;
-  width: 300px;
+  width: 290px;
   position: relative;
-  margin: 1px 1px 1px 1px;
 }
 
 .sys_left {
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .sys_right {
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 sup {
-  font-size: 12px;
-  position: relative;
-  bottom: 3px;
-  left: 3px;
+  font-size: 10px;
   z-index: 2;
 }
 
-.default {
+.default, .arrow_full {
   width: 50px;
   height: $button_height;
 
-  display: flex;
   justify-content: center;
   align-items: center;
 
   font-family: "Roboto", sans-serif !important;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 100%;
 
-  background-color: $button_bg_default;
-  color: white;
+  sup {
+    position: absolute;
+    top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
   @extend %button_template;
 }
 
-.active_default {
-  animation: showHideActive 0.5s linear;
+.arrow_half{
+  width: 50px;
+  height: 25px;
+}
+
+.option{
+  justify-content: center;
+  align-items: flex-end;
+  width: 50px;
+}
+
+.fn{
+  width: 50px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.command{
+  width: 66px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.highlighted{
+  background-color: $button_bg_highlighted;
+}
+
+.unhighlighted{
+  background-color: $button_bg_default;
+}
+
+.selected_default {
+  animation: showHideActive 0.6s linear;
   animation-iteration-count: infinite;
 }
 
@@ -139,21 +195,45 @@ sup {
   }
 }
 
-.sys_default {
-  border: $button_border_default;
-  border-radius: $button_border_radius;
+.active_with_symbols{
+  color: #FFFFFF;
+}
 
+.active_without_symbols{
+  color: #FFFFFF;
+  sup{
+    display: none;
+  }
+}
+
+.unactive_with_symbols{
+  color: #FFFFFF4D;
+  sup{
+    display: none;
+  }
+}
+
+.unactive_without_symbols{
+  color: #FFFFFF4D;
+  sup{
+    color: #FFFFFF;
+  }
+}
+
+.sys_default {
   display: flex;
-  align-items: center;
+  @extend %button_template;
 
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-weight: 300;
-  font-size: 11px;
+  font-size: 12px;
   background-color: $button_bg_default;
-  line-height: 100%;
-  padding: 5px;
-  @extend %button_template;
+  line-height: 12px;
+
+  sup{
+    font-size: 12px;
+  }
 }
 
 .error_1prior {

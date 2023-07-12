@@ -1,14 +1,26 @@
 export interface KeyConfig {
-    id: string;
     content1: string;
     content2?: string;
     selected: boolean;
     errorPressed?: boolean;
     errorPriority?: number;
-    setType: string;
+    type: string;
     needShift?: "left" | "right";
     positionFor?: "left" | "right";
+    active: boolean;
+    highlighted: boolean;
+    specific: {
+      content1: SpecificContentKey,
+      content2?: SpecificContentKey
+    }
   };
+
+  export enum SpecificContentKey {
+    NUMBER = "number",
+    SYSTEM = "system",
+    LETTER = "letter",
+    SYMBOL = "symbol"
+  }
 
   export type KeyboardCases = {
     downCase: Array<string>;
