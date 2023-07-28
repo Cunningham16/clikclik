@@ -38,7 +38,7 @@ export const LoaderComponent = () => {
     return (
         <>
         {isLoad ? (
-        <Loader />
+        <Loader size="normal"/>
       ) : (
         <div>
           <InputText />

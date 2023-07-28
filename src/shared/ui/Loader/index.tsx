@@ -1,9 +1,14 @@
 import { Oval } from "react-loader-spinner";
 import styles from "./styles.module.scss";
+import {FC} from "react"
 
-export const Loader = () => {
+interface Props {
+  size: "normal" | "fullscreen"
+}
+
+export const Loader: FC<Props> = ({ size }) => {
   return (
-    <div className={styles.loader_container}>
+    <div className={size === "normal" ? styles.loader_normal : styles.loader_fullscreen}>
       <Oval
         height={50}
         width={50}

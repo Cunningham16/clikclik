@@ -47,7 +47,7 @@ export const ButtonKey: FC<Props> = memo(({ configKey, configText }) => {
     }
 
     if(specific.content1 === SpecificContentKey.LETTER){
-      return styles.active_with_symbols
+      return `${styles.active_with_symbols} ${styles.key_letter}`
     }
 
     if(configText.isNumbers && configText.isPunctuation){

@@ -9,7 +9,7 @@ import { Loader } from "shared/ui/Loader";
 export const App = () => {
   return (
     <BrowserRouter>
-        <Suspense fallback={<Loader/>}>
+        <Suspense fallback={<Loader size="fullscreen"/>}>
           <Provider store={store}>
             <div className="App">
                 <Routing />

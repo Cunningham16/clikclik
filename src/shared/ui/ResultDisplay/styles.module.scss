@@ -1,4 +1,4 @@
-$main-font: "SFMonoRegular", sans-serif;
+$main-font: "SFMonoRegular";
 
 .container {
   display: flex;
@@ -44,9 +44,11 @@ $main-font: "SFMonoRegular", sans-serif;
 
 .type {
   font-size: 12px;
+  font-family: $main-font;
 }
 
 .placeholder {
   font-size: 14px;
   margin-left: 5px;
+  font-family: "SFProRegular", sans-serif;
 }

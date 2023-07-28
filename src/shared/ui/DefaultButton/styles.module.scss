@@ -3,10 +3,16 @@
     align-items: center;
     justify-content: center;
   
-    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    background-color: #909091;
+    border-radius: 20px;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+
+    img{
+      width: 20px;
+      height: 20px;
+    }
   
     cursor: pointer;
   }

@@ -9,7 +9,7 @@ interface ButtonProps {
 const DefaultButton: FC<ButtonProps> = ({ img, onClick }) => {
   return (
     <button className={styles.default} onClick={onClick}>
-      <img src={img} alt="" />
+      <img src={img} alt="" width="25" height="25"/>
     </button>
   );
 };

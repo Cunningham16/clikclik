@@ -80,6 +80,15 @@ export const keyboardSlice = createSlice({
         state.keyList = data.payload.keyList;
         state.keysCases = data.payload.keyCases;
       }
+    },
+    selectEnter(state){
+      for (let elem of state.keyList) {
+        if (elem.content1 === "enter") {
+          elem.selected = true;
+        }else{
+          elem.selected = false;
+        }
+      }
     }
   },
 });
@@ -94,6 +103,7 @@ export const {
   setArrayTypos,
   clearSelectedKeys,
   queryKeyboard,
+  selectEnter
 } = keyboardSlice.actions;
 
 export const keyboardReducer = keyboardSlice.reducer;

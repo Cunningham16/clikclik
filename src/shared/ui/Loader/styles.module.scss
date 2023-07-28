@@ -1,6 +1,14 @@
-.loader_container{
-    width: 100%;
-    height: 100%;
+.loader_normal{
+    width: 904px;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader_fullscreen{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

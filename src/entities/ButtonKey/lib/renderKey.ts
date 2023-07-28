@@ -18,9 +18,9 @@ export function renderKey(setType: string) {
       case "delete":
         return `${classes.sys_default} ${classes.delete}`;
       case "shift-left":
-        return `${classes.sys_default} ${classes.shift}`;
+        return `${classes.sys_default} ${classes.shift} ${classes.sys_left}`;
       case "shift-right":
-        return `${classes.sys_default} ${classes.shift}`;
+        return `${classes.sys_default} ${classes.shift} ${classes.sys_right}`;
       case "tab":
         return `${classes.sys_default} ${classes.tab} ${classes.sys_left}`;
       case "caps":

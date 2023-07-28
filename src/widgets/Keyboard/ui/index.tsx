@@ -8,12 +8,14 @@ import {
   clearSelectedKeys,
   clearTypoKeyboard,
   returnKeyList,
+  selectEnter,
   setPriorityTypoKeys,
   showErrorKey,
   showSelectedKey,
 } from "@/shared/model/keyboardSlice";
 import styles from "./styles.module.scss";
 import audio_alert from "shared/assets/audio/tindeck_1.mp3";
+import { setSelectedEnter } from "@/shared/lib/setSelectedEnter";
 
 export const Keyboard = memo(() => {
   const { keyList, letterTypo, counterTypo } = useAppSelector(
@@ -51,7 +53,7 @@ export const Keyboard = memo(() => {
     }
 
     if (isEndLine) {
-      dispatch(showSelectedKey("Enter"));
+      dispatch(selectEnter());
     }
 
     if (!isVisibleHints && !isEndLine) {
